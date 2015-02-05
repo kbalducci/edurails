@@ -5,12 +5,18 @@ class CompaniesController < ApplicationController
   # GET /companies.json
   def index
     @companies = Company.all
+    @employees = Employee.all
+    @locations = Location.all
+    @courses = Courses.all
   end
 
   # GET /companies/1
   # GET /companies/1.json
   def show
     @companies = Company.all
+    @employees = Employee.all
+    @locations = Location.all
+    @courses = Courses.all
   end
 
   # GET /companies/new
