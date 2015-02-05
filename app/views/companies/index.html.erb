@@ -32,10 +32,10 @@
   </thead>
 
   <tbody>
-    <% @employees.each do |employee| %>
+
       <tr>
-        <td><%= employee.name %></td>
-        <td><%= employee.job_title %></td>
+        <td><%= employee.name.company.name %></td>
+        <td><%= employee.job_title.company.name %></td>
         <td><%= link_to 'Show', employee %></td>
         <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
         <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
