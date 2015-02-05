@@ -7,7 +7,7 @@ class CompaniesController < ApplicationController
     @companies = Company.all
     @employees = Employee.all
     @locations = Location.all
-    @courses = Courses.all
+
   end
 
   # GET /companies/1
